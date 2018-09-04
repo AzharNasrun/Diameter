@@ -1,0 +1,14 @@
+{
+    "version": "1.0",
+    "async": false,
+    "type": "srr",
+    "param": {
+        "imsi": "510123456",
+        "msisdn": "6285934510540",
+        "scAddress":"62",
+        "smRpMti":1,
+        "srrFlags":1,
+        "smRpSmea":"123321"
+    }
+}
+

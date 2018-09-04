@@ -1,0 +1,14 @@
+{
+    "url": "http://10.32.9.208/request.php",
+    "version": "1.0",
+    "async": false,
+    "type": "ulr",
+    "param": {
+        "imsi": "510123456",
+        "msisdn": "6285934510540",
+        "mcc": "412",
+        "mnc": "88",
+        "ULR-Flags" : 1,
+        "RAT-Type" :1004
+    }
+}

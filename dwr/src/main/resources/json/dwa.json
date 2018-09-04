@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "flags": {
+    "request": false,
+    "proxyable": false,
+    "error": false,
+    "transmitted": false
+  },
+  "commandCode": 280,
+  "applicationId": 0,
+  "hopByHopId": dwa.hopByHopId,
+  "endToEndId": dwa.endToEndId,
+  "avp": [
+    {
+      "code": 264,
+      "description" : "Origin-Host",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "string",
+      "value": "dwa.originHost"
+    },
+    {
+      "code": 296,
+      "description" : "Origin-Realm",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "string",
+      "value": "dwa.originRealm"
+    },
+    {
+      "code": 268,
+      "description" : "Result-Code",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "integer",
+      "value": 2001
+    }
+  ]
+}

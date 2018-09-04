@@ -1,0 +1,35 @@
+
+@startuml
+participant SMSCManager #Lime
+participant HaLocate #LightBlue
+participant SRILCS
+participant PSL
+participant Operator #Pink
+
+== Initialization ==
+autonumber
+HaLocate -> Operator : Authentication Request sending CER
+Operator -[#green]> HaLocate : Authentication Response response CEA
+
+loop periodic 30s
+HaLocate -> Operator : Sending DWR to checking established connection
+Operator -[#green]> HaLocate : Respond with DWA
+end loop
+
+alt established connection case
+autonumber
+SMSCManager -> HaLocate : mark as target with specify MSIDSDN
+HaLocate -> SRILCS : send MSISDN to SRILCS module
+SRILCS -> Operator : send MSISDN to get IMSI from Operator
+Operator -[#green]> HaLocate : get SRILCS-Answer with IMSI from operator
+
+ref over HaLocate, PSL : Mapping value from SRILCS-Answer to PSL-Request
+
+HaLocate -> PSL : send IMSI to PSL module
+PSL -> Operator : send IMSI to get GeoLocation from Operator
+Operator -[#green]> HaLocate : get PSL-Answer with GeoLocation from operator
+HaLocate -> SMSCManager : send Location to SMSCManager
+
+end
+
+@enduml

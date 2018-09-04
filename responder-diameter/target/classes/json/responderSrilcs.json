@@ -1,0 +1,212 @@
+{
+    "version": 1,
+    "type" : "srilcs",
+    "key"  : "keyRouter",
+    "uuid" : "bff91120-d449-4eec-b3f8-1636700cec46",
+    "flags": {
+        "request": false,
+        "proxyable": true,
+        "error": false,
+        "transmitted": false
+    },
+    "commandCode": 8388622,
+    "applicationId": 16777291,
+    "endToEndId":"srilcs.endToEndId",
+    "avp": [
+        {
+          "code" : 263,
+          "description" : "Session-ID",
+          "flags" : {
+            "mandatory" : false,
+            "vendorSpecific": true,
+            "vendorId": false
+          },
+          "vendorId": null,
+          "valueType": "string",
+          "value": "123456"
+        },
+        {
+        	"code": 277,
+        	"description": "Auth-Session-State",
+        	"flags": {
+                "mandatory": true,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": null,
+            "valueType": "integer",
+            "value": 1
+        },
+        {
+            "code": 264,
+            "description": "Origin-Host",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": null,
+            "valueType": "string",
+            "value": "telco.1rstwap.com"
+        },
+        {
+            "code": 296,
+            "description": "Origin-Realm",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": null,
+            "valueType": "string",
+            "value": "1rstwap.com"
+        },
+	{
+            "code":  268,
+            "description": "Result-Code",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": 0,
+            "valueType": "integer",
+            "value": 2001
+        },
+      {
+        "code": 1,
+        "description": "User-Name",
+        "flags": {
+          "mandatory": true,
+          "vendorSpecific": false,
+          "protected": false
+        },
+        "vendorId": 0,
+        "valueType": "string",
+        "value": "srilcs.userName"
+      },
+        {
+            "code": 2401,
+            "description": "Serving-Node",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": true,
+                "protected": false
+            },
+            "vendorId": 10415,
+            "valueType": "grouped",
+            "value": [
+              {
+                "code": 1489,
+                "description": "SGSN-Number",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "SGSNNumber"
+              },
+              {
+                "code": 2402,
+                "description": "MME-Name",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "bohss1.epc.mnc003.mcc422.3gppnetwork.org"
+              },
+              {
+                "code": 2408,
+                "description": "MME-Realm",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "epc.mnc003.mcc422.3gppnetwork.org"
+              },
+              {
+                "code": 2403,
+                "description": "MSC-Number",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "MSCNumber"
+              },
+              {
+                "code": 318,
+                "description": "3GPP-AAA-Server-Name",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "3GPPAAA"
+              },
+              {
+                "code": 2404,
+                "description": "LCS-Capabilities-Sets",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "integer",
+                "value": 0
+              },
+              {
+                "code": 2405,
+                "description": "GMLC-Address",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "GMLCAddress"
+              }
+            ]
+        },
+        {
+          "code": 2405,
+          "description": "GMLC-Address",
+          "flags": {
+            "mandatory": true,
+            "vendorSpecific": true,
+            "protected": false
+          },
+          "vendorId": 10415,
+          "valueType": "string",
+          "value": "tes.gmlsc.addrress"
+        },
+        {
+          "code": 2407,
+          "description": "PPR-Address",
+          "flags": {
+            "mandatory": true,
+            "vendorSpecific": true,
+            "protected": false
+          },
+          "vendorId": 10415,
+          "valueType": "string",
+          "value": "tes.prr.addrress"
+        }
+
+
+    ]
+}

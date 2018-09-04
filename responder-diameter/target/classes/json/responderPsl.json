@@ -1,0 +1,307 @@
+{
+    "version": 1,
+    "type" : "psl",
+    "key"  : "keyRouter",
+    "uuid" : "bff91120-d449-4eec-b3f8-1636700cec46",
+    "flags": {
+        "request": false,
+        "proxyable": true,
+        "error": false,
+        "transmitted": false
+    },
+    "commandCode": 8388620,
+    "applicationId": 16777255,
+    "endToEndId":"psl.endToEndId",
+    "avp": [
+        {
+          "code" : 263,
+          "description" : "Session-ID",
+          "flags" : {
+            "mandatory" : true,
+            "vendorSpecific": false,
+            "vendorId": false
+          },
+          "vendorId": null,
+          "valueType": "string",
+          "value": ""
+        },
+        {
+        	"code": 277,
+        	"description": "Auth-Session-State",
+        	"flags": {
+                "mandatory": true,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": null,
+            "valueType": "integer",
+            "value": 1
+        },
+        {
+            "code": 264,
+            "description": "Origin-Host",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": null,
+            "valueType": "string",
+            "value": "telco.1rstwap.com"
+        },
+        {
+            "code": 296,
+            "description": "Origin-Realm",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": null,
+            "valueType": "string",
+            "value": "1rstwap.com"
+        },
+        {
+            "code": 2513,
+            "description": "Accuracy-Fulfilment-Indicator",
+            "flags": {
+                "mandatory": false,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": 10415,
+            "valueType": "string",
+            "value": "avi"
+        },
+        {
+            "code": 2514,
+            "description": "Age-Of-Location-Estimate",
+            "flags": {
+                "mandatory": false,
+                "vendorSpecific": true,
+                "protected": false
+            },
+            "vendorId": 10415,
+            "valueType": "integer",
+            "value": 12
+        },
+        {
+            "code": 2515,
+            "description": "Velocity-Estimate",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": true,
+                "protected": false
+            },
+            "vendorId": 10415,
+            "valueType": "string",
+            "value": "VelocityEstimate"
+        },
+        {
+            "code": 2516,
+            "description": "EUTRAN-Positioning-Data",
+            "flags": {
+                "mandatory": false,
+                "vendorSpecific": false,
+                "protected": false
+            },
+            "vendorId": 10415,
+            "valueType": "string",
+            "value": "epd"
+        },
+	{
+        "code": 1242,
+        "description": "Location-Estimate",
+        "flags": {
+          "mandatory": true,
+          "vendorSpecific": true,
+          "protected": false
+        },
+        "vendorId": 10415,
+        "valueType": "base64",
+        "value": "10230bb921325323"
+      },
+	{
+            "code": 2552,
+            "description": "ESMLC-Cell-Info",
+            "flags": {
+                "mandatory": false,
+                "vendorSpecific": true,
+                "protected": false
+            },
+            "vendorId": 10415,
+            "valueType": "grouped",
+            "value": [
+		{
+		    "code": 2517,
+		    "description": "ECGI",
+		    "flags": {
+		        "mandatory": true,
+		        "vendorSpecific": true,
+		        "protected": false
+		    },
+		    "vendorId": 10415,
+		    "valueType": "string",
+		    "value": "21301000012305"
+		}]
+	},
+        {
+            "code": 2401,
+            "description": "Serving-Node",
+            "flags": {
+                "mandatory": true,
+                "vendorSpecific": true,
+                "protected": false
+            },
+            "vendorId": 10415,
+            "valueType": "grouped",
+            "value": [
+              {
+                "code": 1489,
+                "description": "SGSN-Number",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "sgsnNumber"
+              },
+              {
+                "code":  2409,
+                "description": "SGSN-Name",
+                "flags": {
+                  "mandatory": false,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId":  10415,
+                "valueType": "string",
+                "value": "sgsnName"
+              },
+              {
+                "code": 2410,
+                "description": "SGSN-Realm",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "sgsnRealm"
+              },
+              {
+                "code": 2402,
+                "description": "MME-Name",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "MMEName"
+              },
+              {
+                "code": 2408,
+                "description": "MME-Realm",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "MMERealm"
+              },
+              {
+                "code": 2403,
+                "description": "MSC-Number",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "MSCNumber"
+              },
+              {
+                "code": 318,
+                "description": "3GPP-AAA-Server-Name",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "AAAServer"
+              },
+              {
+                "code": 2404,
+                "description": "LCS-Capabilities-Sets",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "integer",
+                "value": 32
+              },
+              {
+                "code": 2405,
+                "description": "GMLC-Address",
+                "flags": {
+                  "mandatory": true,
+                  "vendorSpecific": true,
+                  "protected": false
+                },
+                "vendorId": 10415,
+                "valueType": "string",
+                "value": "GMLCAddress"
+              }
+            ]
+        },
+      {
+        "code":  1604,
+        "description": "Cell-Global-Identity",
+        "flags": {
+          "mandatory": false,
+          "vendorSpecific": true,
+          "protected": false
+        },
+        "vendorId": 10415,
+        "valueType": "string",
+        "value": "510.11.34107.23747"
+      },
+        {"code":268,"description":"ResultCode","flags":{"mandatory":true,"vendorSpecific":false,"protect":false},"vendorId":0,"valueType":"integer","value":2001},
+      {
+        "code": 297,
+        "description": "Experimental-Result",
+        "flags": {
+          "mandatory": true,
+          "vendorSpecific": true,
+          "protected": false
+        },
+        "vendorId": 0,
+        "valueType": "grouped",
+        "value": [
+          {
+            "code": 298,
+            "description": "Experimental-Result-Code",
+            "flags": {
+              "mandatory": true,
+              "vendorSpecific": true,
+              "protected": false
+            },
+            "vendorId": 0,
+            "valueType": "integer",
+            "value": 2001
+          }]
+      }
+    ]
+}

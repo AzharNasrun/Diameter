@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "type": "srr",
+  "key": "keySrr",
+  "uuid": "bff91120-d449-4eec-b3f8-1636700cec46",
+  "flags": {
+    "request": false,
+    "proxyable": true,
+    "error": false,
+    "transmitted": false
+  },
+  "commandCode": 8388647,
+  "applicationId": 16777312,
+  "endToEndId":"srr.endToEndId",
+  "avp": [
+    {
+      "code": 263,
+      "description": "Session-ID",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "vendorId": false
+      },
+      "vendorId": null,
+      "valueType": "string",
+      "value": ""
+    },
+    {
+      "code": 277,
+      "description": "Auth-Session-State",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 10415,
+      "valueType": "integer",
+      "value": 1
+    },
+    {
+      "code": 264,
+      "description": "Origin-Host",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 10415,
+      "valueType": "string",
+      "value": "telco.1rstwap.com"
+    },
+    {
+      "code": 296,
+      "description": "Origin-Realm",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 10415,
+      "valueType": "string",
+      "value": "1rstwap.com"
+    },
+    {
+      "code": 297,
+      "description": "Experimental-Result",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "vendorId": false
+      },
+      "vendorId": null,
+      "valueType": "grouped",
+      "value": [
+        {
+          "code": 266,
+          "description": "Vendor-Id",
+          "flags": {
+            "mandatory": true,
+            "vendorSpecific": false,
+            "vendorId": false
+          },
+          "vendorId": 0,
+          "valueType": "integer",
+          "value": 10415
+        },
+        {
+          "code": 298,
+          "description": "Experimental-Result-Code",
+          "flags": {
+            "mandatory": true,
+            "vendorSpecific": false,
+            "vendorId": false
+          },
+          "vendorId": 0,
+          "valueType": "integer",
+          "value": 2001
+        }
+      ]
+    }
+  ]
+}

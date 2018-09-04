@@ -1,0 +1,13 @@
+{
+    "url": "http://10.32.9.208/request.php",
+    "version": "1.0",
+    "type": "locate",
+    "uuid": "test",
+    "async": false,
+    "pushKey": "haLoc",
+    "param": {
+        "target": "6285223965145",
+        "targetType": "msisdn",
+        "method": "psl"
+    }
+}

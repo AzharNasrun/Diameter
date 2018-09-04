@@ -1,0 +1,31 @@
+{
+    "uuid": "bff91120-d449-4eec-b3f8-1636700cec46",
+    "version": "1.0",
+    "async": false,
+    "key": "keyLocate",
+    "type": "psl",
+    "param": {
+        "slgLocationType": 0,
+        "imsi": "628170000000",
+        "lcsEpsClientName": {
+            "lcsNameString": "nameString",
+            "lcsFormatIndicator": 3
+        },
+        "lcsClientType": 2,
+        "lcsPriority":1,
+        "lcsQos":{
+            "lcsQosClass": 1,
+            "horizontalAccuracy": 1,
+            "verticalAccuracy":1,
+            "verticalRequested":1,
+            "responseTime":1
+        },
+        "lcsSupportedGadShapes":1,
+        "lcsPrivacyCheckNonSession":{
+            "lcsPrivacyCheck":1
+        },
+        "lcsPrivacyCheckSession":{
+            "lcsPrivacyCheck":1
+        }
+    }
+}

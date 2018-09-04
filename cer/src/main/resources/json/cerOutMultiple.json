@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "flags": {
+    "request": true,
+    "proxyable": false,
+    "error": false,
+    "transmitted": false
+  },
+  "commandCode": 257,
+  "applicationId": 0,
+  "avp": [
+    {
+      "code": 264,
+      "description" : "Origin-Host",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "string",
+      "value": "cer.originHost"
+    },
+    {
+      "code": 296,
+      "description" : "Origin-Realm",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "string",
+      "value": "cer.originRealm"
+    },
+    {
+      "code": 257,
+      "description" : "Host-Ip-Address",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "ipAddress",
+      "value": {
+        "family": "ipv4",
+        "address": "cer.hostIpAddress"
+      }
+    },
+    {
+      "code": 266,
+      "description" : "Vendor-Id",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "integer",
+      "value": cer.vendorId
+    },
+    {
+      "code": 269,
+      "description" : "Product-Name",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": false,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "string",
+      "value": "cer.productName"
+    },
+
+    {
+      "code": 258,
+      "description" : "Auth-Application-Id",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": true,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "integer",
+      "value": cer.auth.slhId
+    },
+    {
+      "code": 258,
+      "description" : "Auth-Application-Id",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": true,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "integer",
+      "value": cer.auth.slgId
+    },
+    {
+      "code":  299,
+      "description" : "Inband-Security-Id",
+      "flags": {
+        "mandatory": true,
+        "vendorSpecific": true,
+        "protected": false
+      },
+      "vendorId": 0,
+      "valueType": "integer",
+      "value": cer.inband.secId
+    }
+
+  ]
+}

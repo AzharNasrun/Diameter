@@ -1,0 +1,13 @@
+ { "uuid" : "bff91120-d449-4eec-b3f8-1636700cec46",
+  "version" : "1.0",
+  "flags" : {
+    "request" : true
+  },
+  "async" : false,
+  "type" : "srilcs",
+  "start" : 0,
+  "param" : {
+    "destinationRealm" : "ssd.ams",
+    "msisdn" : "628170000000"
+  }
+}
